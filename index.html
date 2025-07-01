@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1 class="hero__title">Learn to code by watching others</h1>
+        <p class="hero__description">
+          See how experienced developers solve problems in real time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+
+      <section class="signup">
+        <div class="signup__cta">
+          <button class="signup__cta-button">
+            <span>Try it free 7 days</span> then $20/mo thereafter
+          </button>
+        </div>
+
+        <form class="signup__form" id="signup-form" novalidate>
+          <div class="signup__input-wrapper">
+            <input
+              type="text"
+              id="first-name"
+              class="signup__input"
+              placeholder="First Name"
+              required
+            />
+            <span class="signup__error-message"
+              >First name cannot be empty</span
+            >
+          </div>
+
+          <div class="signup__input-wrapper">
+            <input
+              type="text"
+              id="last-name"
+              class="signup__input"
+              placeholder="Last Name"
+              required
+            />
+            <span class="signup__error-message">Last name cannot be empty</span>
+          </div>
+
+          <div class="signup__input-wrapper">
+            <input
+              type="email"
+              id="email"
+              class="signup__input"
+              placeholder="Email Address"
+              required
+            />
+            <span class="signup__error-message"
+              >Looks like this is not an email</span
+            >
+          </div>
+
+          <div class="signup__input-wrapper">
+            <input
+              type="password"
+              id="password"
+              class="signup__input"
+              placeholder="Password"
+              required
+            />
+            <span class="signup__error-message">Password cannot be empty</span>
+          </div>
+
+          <button type="submit" class="signup__button">
+            Claim your free trial
+          </button>
+
+          <p class="signup__terms">
+            By clicking the button, you agree to our
+            <a href="#">Terms and Services</a>.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
